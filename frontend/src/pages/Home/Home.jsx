@@ -10,11 +10,9 @@ import Toast from "../../components/ToastMessage/Toast";
 import EmptyCard from "../../components/Cards/EmptyCard";
 import emptyCardImg from "../../assets/emptyCard.jpg";
 import noDataImg from "../../assets/nodata.jpg";
-import { ThemeContext } from "../../components/ThemeContext/ThemeContext";
 import Header from "../../components/Header/Header";
 
 const Home = () => {
-  const themeContext = useContext(ThemeContext)
   const [openAddEditModal, setOpenAddEditModal] = useState({
     isShow: false,
     type: "add",

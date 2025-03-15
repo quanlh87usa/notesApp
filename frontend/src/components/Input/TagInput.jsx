@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 import { MdAdd, MdClose } from "react-icons/md"
 
 const TagInput = ({ tags, setTags }) => {
