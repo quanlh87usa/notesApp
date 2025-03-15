@@ -1,1 +1,1 @@
-export const BASE_URL = 'http://backend-notes-app-ten.vercel.app'
+export const BASE_URL = 'https://notesapp-server-five.vercel.app'
