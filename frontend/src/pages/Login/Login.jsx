@@ -27,10 +27,12 @@ const Login = () => {
 
     // CAll API login
     try {
+      console.log('a1')
       const response = await axiosInstance.post("/login", {
         email: email,
         password: password}
       )
+      console.log('b1')
       // handle successful login response
       if (response.data && response.data.accessToken) {
         localStorage.setItem("token", response.data.accessToken)
