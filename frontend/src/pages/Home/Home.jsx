@@ -8,7 +8,7 @@ import moment from "moment";
 import axiosInstance from "../../utils/axiosinstance";
 import Toast from "../../components/ToastMessage/Toast";
 import EmptyCard from "../../components/Cards/EmptyCard";
-import emptyCardImg from "../../assets/emptyCard.jpg";
+import emptyCardImg from "../../assets/emptycard.jpg";
 import noDataImg from "../../assets/nodata.jpg";
 import Header from "../../components/Header/Header";
 
