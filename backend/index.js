@@ -16,7 +16,7 @@ const { authenticateToken } = require("./utilities");
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://notesapp-client-ruby.vercel.app",
+    origin: "*",
   })
 );
 app.get("/", (req, res) => {
