@@ -1,8 +1,7 @@
 require("dotenv").config();
-const config = require("./config.json");
 const mongoose = require("mongoose");
 // get connect string
-mongoose.connect(config.connectionString);
+mongoose.connect(process.env.CON_STR);
 const User = require("./models/user.model");
 const Note = require("./models/note.model");
 
@@ -16,7 +15,7 @@ const { authenticateToken } = require("./utilities");
 app.use(express.json());
 app.use(
   cors({
-    origin: "*",
+    origin: process.env.CORS_ORIGIN,
   })
 );
 app.get("/", (req, res) => {
