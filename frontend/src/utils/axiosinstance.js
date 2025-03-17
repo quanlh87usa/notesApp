@@ -2,10 +2,12 @@ import axios from "axios"
 import { BASE_URL } from "./constants"
 
 const axiosInstance = axios.create({
-    baseURL: BASE_URL,
+    baseURL: "https://notesapp-server-lake.vercel.app",
     timeout: 10000,
     headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "https://notesapp-server-lake.vercel.app",
+        "Access-Control-Allow-Credentials": true,
     }
 })
 
