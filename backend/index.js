@@ -15,10 +15,7 @@ const { authenticateToken } = require("./utilities");
 app.use(express.json());
 app.use(
   cors({
-    'Access-Control-Allow-Origin': 'https://notesapp-client-sage.vercel.app',
-    'Access-Control-Allow-Methods': ['GET', 'POST', 'PUT', 'DELETE'],
-    'Access-Control-Allow-Headers': 'Origin, X-Api-Key, X-Requested-With, Content-Type, Accept, Authorization',
-    'Access-Control-Allow-Credentials': true,
+    origin: "*",
   })
 );
 app.get("/", (req, res) => {
