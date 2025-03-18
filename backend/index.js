@@ -1,7 +1,7 @@
 require("dotenv").config();
 const mongoose = require("mongoose");
 // get connect string
-mongoose.connect(process.env.CON_STR);
+mongoose.connect("mongodb+srv://quanlh87usa:lVewFW3wx8vVevbJ@cluster0-quandev.whxcp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0-quandev");
 const User = require("./models/user.model");
 const Note = require("./models/note.model");
 
@@ -15,7 +15,7 @@ const { authenticateToken } = require("./utilities");
 app.use(express.json());
 app.use(
   cors({
-    origin: process.env.CORS_ORIGIN,
+    origin: "https://notesapp-client-sage.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
